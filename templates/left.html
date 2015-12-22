@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+    {% block content %}
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+              <a href="{{settings.BASE_URL}}/main" class="navbar-brand" target="mainFrame">SaltStack Web UI</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+                <ul class="nav nav-sidebar">
+                    <li><a href="{{settings.BASE_URL}}/monitor" target="mainFrame">主机监控</a></li>
+                    <li><a href="{{settings.BASE_URL}}/server" target="mainFrame">主机管理</a></li>
+                    <li><a href="{{settings.BASE_URL}}/manage" target="mainFrame">资产管理</a></li>
+                    <li><a href="{{settings.BASE_URL}}/admin" target="mainFrame">账户管理</a></li>
+                    <br/>
+                    <li><a href="{{settings.BASE_URL}}/logout" class="navbar-brand" target="_top">退出登陆</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    {% end %}

@@ -1,0 +1,21 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        {% block head %}
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>SaltStack 运维自动化管理后台</title>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href={{static_url("css/bootstrap.min.css")}}>
+        <link rel="stylesheet" href={{static_url("css/dashboard.css")}}>
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src={{static_url("js/jquery.min.js")}}></script>
+
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src={{static_url("js/bootstrap.min.js")}}></script>
+        {% end %}
+    </head>
+    <body>
+        {% block content %}{% end %}
+    </body>
+</html>
+
